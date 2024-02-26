@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+*{ margin: 0; padding: 0; }
+body,html{ font-size: 12px; }
+h1,h2,h3,h4,h5,h6{ font-size: 100%; }
+ol,ul{ list-style: none; }
+a{ text-decoration: none; color: inherit; }
+img{ vertical-align: bottom; }
+select,input{ vertical-align: middle; }
+address{ font-style: normal; }
+button{ border: none; background: transparent; }
+
+
+#wrap{
+  width: 100%;
+  min-width: 1000px;
+}
+.boxalign{
+  width: 1000px;
+  margin: auto;
+}
+
+/*header*/
+header{
+  padding-top: 40px;
+  overflow: hidden;
+}
+#tlogo{
+  float: left;
+  margin-bottom: 30px;
+}
+#tlogo h1{}
+#tlogo a{}
+#tlogo img{}
+
+nav{
+  float: left;
+}
+nav ul{
+  overflow: hidden;
+  padding-top: 10px;
+}
+nav li{
+  float: left;
+  margin-left: 30px;
+}
+nav li::after{
+  content: '';
+  display: block;
+  border-bottom: 5px solid #ed1c24;
+  width: 0;
+  transition: 0.3s;
+}
+nav li:hover::after{
+  width: 100%;
+}
+nav a{
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #999;
+  padding-bottom: 26px;
+}
+
+
+
+#search{
+  float: right;
+  padding-top: 5px;
+}
+.searchbtn{
+  float: left;
+  position: relative;
+}
+.searchbtn input{
+  height: 30px;
+  color: #999;
+  padding-left: 10px;
+}
+.searchbtn .btn01{
+  background: url("01_header/btnSearch.png");
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.btn02{
+  background: url("01_header/btnearth.png") #eee center;
+  display: block;
+  width: 33px;
+  height: 33px;
+  font-size: 0;
+  line-height: 0;
+  float: left;
+  border: 1px solid #eee;
+  margin-left: 10px;
+}
+
+/*main*/
+main{
+  background: url("02_slider/slideBg.jpg") center;
+  width: 100%;
+  height: 499px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.textcover{
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  padding: 5rem 2rem;
+  transition: 0.5s;
+}
+/*
+.textcover h3{
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.textcover h2{
+  font-size: 3.5rem;
+  line-height: 1;
+  margin: 1rem 0 4rem;
+}
+.textcover p{
+  font-size: 1.2rem;
+}
+.textcover a{
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: 1px solid;
+  margin-top: 3rem;
+}
+.textcover span{
+  margin-left: 20px;
+}
+
+*/
+}
+.textcover h3{
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.textcover h2{
+  font-size: 3rem;
+  line-height: 1;
+  margin: 1rem 0 4rem;
+}
+.textcover span{
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  margin: 3rem 0 1.5rem;
+}
+.textcover p{
+  font-size: 1.1rem;
+  letter-spacing: -1px;
+  line-height: 1.8;
+}
+.textcover a{
+  display: inline-block;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  margin-top: 5rem;
+}
+.textcover a:hover{
+  background: #fff;
+  color: #333;
+}
+main:hover .bgimg{
+  transform: scale(1.1);
+}
+main:hover .textcover{
+  left: 5%;
+}
+
+
+/*
+
+#slidenav{
+  background: rgba(0, 0, 0, 0.69);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+#slidenav ul{
+  overflow: hidden;
+}
+#slidenav li{
+  float: left;
+  width: 200px;
+  text-align: center;
+  border-left: 1px solid #555;
+  box-sizing: border-box;
+}
+#slidenav li:nth-child(5){
+  border-right: 1px solid #555;
+}
+#slidenav a{
+  display: block;
+  line-height: 70px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#slidenav li:hover a{
+  background: #ed1c24;
+*/
+}
+/*contents*/
+#contents{}
+
+#con01{
+  padding: 6rem 0;
+}
+.contitle{
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: -1px;
+}
+.contitle h2{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.contitle p{
+  font-size: 1.3rem;
+  color: #777;
+}
+
+.conbanner{
+  border: 1px solid #ccc;
+  margin-top: 4rem;
+  transition: 0.5s;
+}
+.conbanner.bgimg1{
+  background: url("03_content01/icon_mca01_01.png") no-repeat #eee 100px;
+}
+.conbanner.bgimg2{
+  background: url("03_content01/icon_mca02_01.png") no-repeat #eee 100px;
+}
+
+.conbanner a{
+  display: block;
+  height: 250px;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+.conbanner span{
+  display: block;
+}
+.context{
+  border-left: 1px solid #ccc;
+  margin-left: 350px;
+  padding-left: 100px;
+}
+.context .text1{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.context .text2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem;
+}
+.context .text3{
+  font-size: 1.3rem;
+  color: #999;
+}
+.context .more{
+  display: inline-block;
+  color: #999;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+}
+
+.conbanner:hover.bgimg1{
+  background: url("03_content01/icon_mca01_02hover.png") no-repeat #222 100px;
+}
+.conbanner:hover.bgimg2{
+  background: url("03_content01/icon_mca02_02hover.png") no-repeat #222 100px;
+}
+.conbanner:hover .text1{
+  color: #fff;
+}
+.conbanner:hover .text2{
+  color: #fff;
+}
+
+#con02{
+  background: url("04_content02/bg_mCon.jpg");
+  width: 100%;
+  height: 755px;
+  padding: 6rem 0;
+}
+
+.itemcover{
+  overflow: hidden;
+}
+.itemcover li{
+  float: left;
+  width: 320px;
+}
+.itemcover li+li{
+  margin-left: 20px;
+}
+.itemcover .item01 .itemtop{
+  background: url("04_content02/img_circle.png") no-repeat 210px 170px #fe9f89;
+}
+.itemcover .item02 .itemtop{
+  background: url("04_content02/img_circle.png") no-repeat 210px 170px #ff4528;
+}
+.itemcover .item03 .itemtop{
+  background: url("04_content02/img_circle.png") no-repeat 210px 170px #fe9f89;
+}
+
+.itemcover a{
+  display: block;
+}
+.itemcover span{
+  display: block;
+}
+
+.itemcover .itemtop{
+  height: 280px;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.itemcover .itemtop .itext1{
+  font-size: 3rem;
+}
+.itemcover .itemtop .itext2{
+  font-size: 1.5rem;
+}
+.itemcover .itemtop .itext3{
+  font-size: 1.2rem;
+  margin: 2.5rem 0 1.5rem;
+}
+.itemcover .itemtop .imore{
+  display: inline-block;
+  border: 1px solid;
+  padding: 0.2rem 1rem;
+}
+
+.itemcover .itembot{
+  background: #fff;
+  height: 210px;
+  padding: 2rem 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.itemcover .itembot img{
+
+}
+.itemcover .itembot span{
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+  margin-top: 2rem;
+}
+#fbot{
+  text-align: center;
+  padding: 5rem;
+  box-shadow: 0 0 10px #ccc;
+}
+
+
+
+
+
+/*footer*/
+footer{}
+
